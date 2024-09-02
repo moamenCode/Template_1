@@ -1,7 +1,3 @@
-/* font-family: "Poppins", sans-serif;
-font-family: "Rubik", system-ui;
-font-family: "Roboto", system-ui;
-font-family: "Montserrat", system-ui; */
 * {
     margin: 0;
     padding: 0;
@@ -78,6 +74,25 @@ body {
     background-color: #F5F7F8;
     height: 7px;
 }
+.l0 {
+    position: relative;
+}
+.new-blogs::after {
+    display: none;
+}
+.topList .l0 .new-blogs {
+    position: absolute;
+    background-color: #31363F;
+    padding: 15px 20px;
+    height: 50px;
+    width: 150px;
+    top: 60px;
+    border: 1px solid transparent;
+    visibility: hidden;
+    transition: all 0.3s ease-in-out;
+}
+.topList .l0 .new-blogs:hover { background-color: #fff;color: #31363F;border-color: #31363F; }
+.topList li.l0:hover a.new-blogs{visibility: visible; transition: all 0.3s ease-in-out;}
 /************ End header *********************/
 
 .section_home {
